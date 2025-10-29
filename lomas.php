@@ -19,6 +19,24 @@ foreach ($biedri as $biedrs) {
 }
 
 
+for($i = 0; $i < count($biedri); $i++){
+    if($biedri[$i]["loma"] == "leader"){
+        echo $biedri[$i]["vards"] . " ir Līderis";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 $kopaStundas = 0;
 foreach ($biedri as $biedrs) {
     $kopaStundas += $biedrs->stundas;
